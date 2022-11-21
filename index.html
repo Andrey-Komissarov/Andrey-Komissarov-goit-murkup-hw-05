@@ -38,12 +38,17 @@
                     </ul>    
             </div>
         </header>
+        <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close" data-modal-close></button>
+        </div>
+        </div>
         <main>
             <!--Hero-->
             <section class="hero">
                     <div class="container">
                         <h1 class="hero-title">Ефективні рішення  для вашого бізнесу</h1>
-                        <button class="button" type="button">Замовити послугу</button>
+                        <button class="button" type="button" data-modal-open>Замовити послугу</button>
                     </div>
             </section>
             <!--Наші переваги-->
@@ -96,9 +101,18 @@
                 <div class="container">
                      <h2 class="title">Чим ми займаємося</h2>
                         <ul class="list">
-                            <li class="item"><img src="./images/file1.jpg" alt="програміст працює за комп'ютером" width="370"></li>
-                            <li class="item"><img src="./images/file2.jpg" alt="жінка тримає планшет та працює на ньому" width="370"></li>
-                            <li class="item"><img src="./images/file3.jpg" alt="програміт вибирає зображення на комп'ютері" width="370"></li>
+                            <li class="item">
+                                <img src="./images/file1.jpg" alt="програміст працює за комп'ютером" width="370">
+                                <p class="text">Десктопні додатки</p>
+                            </li>
+                            <li class="item">
+                                <img src="./images/file2.jpg" alt="жінка тримає планшет та працює на ньому" width="370">
+                                <p class="text">Мобільні додатки</p>
+                            </li>
+                            <li class="item">
+                                <img src="./images/file3.jpg" alt="програміт вибирає зображення на комп'ютері" width="370">
+                                <p class="text">Дизайнерські рішення</p>
+                            </li>
                         </ul>
                 </div>
             </section>
@@ -364,6 +378,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 
 </html>
